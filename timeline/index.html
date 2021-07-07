@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>La violencia en Colombia</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<section id=timeline>
+	<h1>La violencia en Colombia</h1>
+	<p class="leader">Línea de tiempo. Estudiantes de Grado 10.<br><br><a href=".."><img src="img/home_icon.png" width="25"> REGRESAR AL INICIO</a></p>
+	<div class="demo-card-wrapper">
+		<div class="demo-card demo-card--step1">
+			<div class="head">
+				<div class="number-box">
+					<span>1946</span>
+				</div>
+				<h2>EL INICIO DE LA <br style="margin-bottom: 10px;">VIOLENCIA</h2>
+			</div>
+			<div class="body">
+				<p>La violencia es el periódico histórico en el cual los partidos Liberal y Conservador se enfrentaron por todo el territorio con episodios extremadamente violentos.</p>
+				<img src="img/personaje-item-1.png" alt="Graphic">
+			</div>
+			<button id="custButton" class="demo-card--step1" data-toggle="modal" data-target="#leermas1">LEER MÁS</button>
+			<button id="custButton" class="demo-card--step1" data-toggle="modal" data-target="#actividad1">ACTIVIDAD</button>
+		</div>
+
+		<div class="demo-card demo-card--step2">
+			<div class="head">
+				<div class="number-box">
+					<span>1948</span>
+				</div>
+				<h2>EL BOGOTAZO</h2>
+			</div>
+			<div class="body">
+				<p>Jorge Eliecer Gaitán, convocó a campesinos y obreros a unirse a su movimiento por la mejora de las condiciones laborales y el acceso a vivienda, educación y salud.</p>
+				<img src="img/personaje-item-2.png" alt="Graphic">
+			</div>
+			<button id="custButton" class="demo-card--step2" data-toggle="modal" data-target="#leermas2">LEER MÁS</button>
+			<button id="custButton" class="demo-card--step2" data-toggle="modal" data-target="#actividad2">ACTIVIDAD</button>
+		</div>
+
+		<div class="demo-card demo-card--step3">
+			<div class="head">
+				<div class="number-box">
+					<span>1950</span>
+				</div>
+				<h2>LOS CHULAVITA Y LOS <br style="margin-bottom: 10px;">PÁJAROS</h2>
+			</div>
+			<div class="body">
+				<p>Después del asesinato de Jorge Eliecer Gaitán, todo el país se convirtió en caos, pues hasta en la cámara se enfrentaron liberales y conservadores. El presidente Mariano Ospina Pérez trató de recuperar el orden público a través de la represión.</p>
+				<img src="img/personaje-item-3.png" alt="Graphic">
+			</div>
+			<button id="custButton" class="demo-card--step3" data-toggle="modal" data-target="#leermas3">LEER MÁS</button>
+			<button id="custButton" class="demo-card--step3" data-toggle="modal" data-target="#actividad3">ACTIVIDAD</button>
+		</div>
+
+		<div class="demo-card demo-card--step4">
+			<div class="head">
+				<div class="number-box">
+					<span>1953</span>
+				</div>
+				<h2>GOLPE DE ESTADO</h2>
+			</div>
+			<div class="body">
+				<p>Durante los años de 1951 y 1952, Colombia vivió un periodo más intenso de violencia. Con el partido conservador dividido y los dirigentes liberales exiliados en el exterior, la sociedad vio necesaria la intervención militar.</p>
+				<img src="img/personaje-item-4.png" alt="Graphic">
+			</div>
+			<button id="custButton" class="demo-card--step4" data-toggle="modal" data-target="#leermas4">LEER MÁS</button>
+			<button id="custButton" class="demo-card--step4" data-toggle="modal" data-target="#actividad4">ACTIVIDAD</button>
+		</div>
+
+		<div class="demo-card demo-card--step5">
+			<div class="head">
+				<div class="number-box">
+					<span>1957</span>
+				</div>
+				<h2>FRENTE NACIONAL</h2>
+			</div>
+			<div class="body">
+				<p>Los líderes políticos de ambos partidos iniciaron un movimiento para retomar el poder; apoyados por la insatisfacción de grupos sociales como estudiantes, maestros y la iglesia, además del inconformismo del pueblo, se empieza a gestar el Frente Nacional.</p>
+				<img src="img/personaje-item-5.png" alt="Graphic">
+			</div>
+			<button id="custButton" class="demo-card--step5" data-toggle="modal" data-target="#leermas5">LEER MÁS</button>
+			<button id="custButton" class="demo-card--step5" data-toggle="modal" data-target="#actividad5">ACTIVIDAD</button>
+		</div>
+    
+	</div>
+</section>
+
+<!-- leermas1 -->
+			<div class="modal fade" id="leermas1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">1946 - Más información</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body" style="text-align: justify;">
+			        Durante el siglo XX, el liderazgo del país se dividió en dos periodos conocidos como “La Hegemonía Conservadora” y “La República Liberal”, hasta 1945, cuando el presidente liberal Alfonso López Pumarejo renuncia al cargo y se convocan a elecciones presidenciales para 1946. El partido Liberal se encontraba divido entre los candidatos Gabriel Turbay, apoyado por la clase elitista, y Jorge Eliecer Gaitán, líder popular; mientras que el partido Conservador, en decisión unánime apoyó a su candidato Mariano Ospina Pérez quien resultó ganador. Esto ocasionó que el país de dividiera políticamente e inicien las persecuciones ideológicas.
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+<!-- leermas2 -->
+			<div class="modal fade" id="leermas2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">1948 - Más información</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body" style="text-align: justify;">
+			        Para ese entonces Jorge Eliecer Gaitán era líder único del partido liberal y candidato presidencial para las siguientes elecciones. Pese al tenso ambiente político en el que se vivía, Gaitán lideró la Marcha del Silencio; conocida así porque en medio de la multitud en silencio, él declaraba su famoso discurso conocido como “Oración por la Paz”. Dos meses después, Jorge Eliecer Gaitán es asesinado al salir de su oficina, lo cual provocó una revuelta popular dejando cientos de muertos y a una Bogotá casi destruida, además de una ola de violencia que poco a poco fue recorriendo las regiones de toda Colombia, iniciando con las persecución a muerte de los liberales.
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+<!-- leermas3 -->
+			<div class="modal fade" id="leermas3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">1950 - Más información</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body" style="text-align: justify;">
+			        De cara a las nuevas jornadas electorales, el partido conservador a través de su presidente, se encargó de limpiar las fuerzas policiales y militares de ideologías liberales, difundió información falsa a través los medios de comunicación y conformó las policías informales al servicio del partido conservador; los chulavita, quienes eran llevados a territorios de conflicto para torturar y masacrar a grupos gaitanistas y liberales, y los pájaros, asesinos a sueldo contratados para matar a opositores políticos. Estos grupos lograron asesinar alrededor de 200.000 personas en los Santanderes, Llanos orientales y la zona andina. En respuesta a ellos, los liberales desplazados, conformaron grupos armados en las montañas, dando a inicio a los grupos guerrilleros.
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+<!-- leermas4 -->
+			<div class="modal fade" id="leermas4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">1953 - Más información</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body" style="text-align: justify;">
+			        En 1953, bajo solicitud de líderes políticos de los partidos conservador y liberal, el Teniente General Gustavo Rojas Pinilla da un Golpe de Estado pacífico con el fin de retomar el orden público en todo el país. Ordeno un cese unilateral al fuego a las fuerzas armadas y decretó una amnistía a los grupos guerrilleros, sin embargo, no hubo las suficientes garantías para que todos los grupos liberales de desmovilizaran, por lo que continuaron con su actividad en las zonas rurales del país. Poco a poco, se separó de los partidos tradicionales y conformó su propio partido quien lideraba la dictadura militar en la que se convirtió, pues aunque la situación económica había crecido considerablemente, las fuerzas armadas se encargaron de silenciar los movimientos estudiantiles y los medios de comunicación.
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+<!-- leermas5 -->
+			<div class="modal fade" id="leermas5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">1957 - Más información</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body" style="text-align: justify;">
+			        Después de varias reuniones, el partido conservador acordó dejar la persecución política y el partido liberal a imponer mayorías electorales; así que firmaron un acuerdo donde se reparten en los tres poderes del estado y la presidencia será alternada durante los 16 años siguientes. Inicio un paro nacional donde se sumaron los comerciantes y banqueros a maestros y estudiantes. Gustavo Rojas Pinilla quedó solo en el poder y decide renunciar y entregar el mando a una junta militar, quien luego, dejan el poder en manos del Frente Nacional.
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+<!-- actividad1 -->
+			<div class="modal fade" id="actividad1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">1946 - Actividad</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body" style="text-align: justify;">
+				        Laureano Gómez, fue un político conservador y ex presidente de Colombia en los años de 1950 y 1951. Alfonso López Pumarejo, fue un político liberal y ex presidente de Colombia en los periodos de 1934 - 1938 y 1942 – 1945. Con base en la imagen siguiente, analice las frases de cada uno de estos personajes y determine cuáles son las principales características de cada partido político.<br><br>
+
+				        <img src="img/act1.png" style="width: 80%; margin: 0 auto;">
+
+				        <br><br>Seleccione liberal o conservador al frente de cada frase.
+				        <br>
+				        <div class="container">
+				        	<hr>
+							<div class="row">
+								<div class="col-md-1" id="act1resp1" style="display: none">
+								</div>
+								<div class="col-md-7">
+								  Los principios y el carácter de los militantes políticos deben ir acorde a la concepción natural del mundo y ante Dios.
+								</div>
+								<div class="col-md-2">					    
+								    <div class="form-check">
+									  <input class="form-check-input" type="radio" name="act1p1" id="act1p1l" value="l">
+									  <label class="form-check-label" for="act1p1l">
+									  	Liberal
+									  </label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="act1p1" id="act1p1c" value="c">
+									  <label class="form-check-label" for="act1p1c">
+									  	Conservador
+									  </label>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-md-1" id="act1resp2" style="display: none">
+								</div>
+								<div class="col-md-7">
+								  La defensa de los derechos fundamentales humanos debe partir de unas correctas políticas públicas.
+								</div>
+								<div class="col-md-2">					    
+								    <div class="form-check">
+									  <input class="form-check-input" type="radio" name="act1p2" id="act1p2l" value="l">
+									  <label class="form-check-label" for="act1p2l">
+									  	Liberal
+									  </label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="act1p2" id="act1p2c" value="c">
+									  <label class="form-check-label" for="act1p2c">
+									  	Conservador
+									  </label>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-md-1" id="act1resp3" style="display: none">
+								</div>
+								<div class="col-md-7">
+								  La institucionalidad y la legalidad de las acciones son vitales para mantener el orden en el sistema político.
+								</div>
+								<div class="col-md-2">					    
+								    <div class="form-check">
+									  <input class="form-check-input" type="radio" name="act1p3" id="act1p3l" value="l">
+									  <label class="form-check-label" for="act1p3l">
+									  	Liberal
+									  </label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="act1p3" id="act1p3c" value="c">
+									  <label class="form-check-label" for="act1p3c">
+									  	Conservador
+									  </label>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-md-1" id="act1resp4" style="display: none">
+								</div>
+								<div class="col-md-7">
+								  La libertad para organizarse es importante en la sociedad para la defensa de los recursos públicos.
+								</div>
+								<div class="col-md-2">					    
+								    <div class="form-check">
+									  <input class="form-check-input" type="radio" name="act1p4" id="act1p4l" value="l">
+									  <label class="form-check-label" for="act1p4l">
+									  	Liberal
+									  </label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="act1p4" id="act1p4c" value="c">
+									  <label class="form-check-label" for="act1p4c">
+									  	Conservador
+									  </label>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-md-1" id="act1resp5" style="display: none">
+								</div>
+								<div class="col-md-7">
+								  El hombre tiene el derecho fundamental a la libertad en los ámbitos culturales, éticos, de género y demás, y aun así, seguir siendo igual a los demás ante la ley.
+								</div>
+								<div class="col-md-2">					    
+								    <div class="form-check">
+									  <input class="form-check-input" type="radio" name="act1p5" id="act1p5l" value="l">
+									  <label class="form-check-label" for="act1p5l">
+									  	Liberal
+									  </label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="act1p5" id="act1p5c" value="c">
+									  <label class="form-check-label" for="act1p5c">
+									  	Conservador
+									  </label>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-md-10" id="act1caldesc"></div>
+								<div class="col-md-2"><button id="act1cal" class="btn btn-success">CALIFICAR</button></div>
+							</div>
+						</div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+<!-- actividad2 -->
+			<div class="modal fade" id="actividad2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">1948 - Actividad</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body" style="text-align: justify;">
+			        <div class="container">
+			        	<div class="row">
+			        		<div class="col-md-6">
+			        			<iframe width="350" height="315" src="https://www.youtube.com/embed/dRJLxJtmv8U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+			        			<div class="row">
+			        				<div class="col-md-10" id="act2caldesc"></div>
+			        			</div>
+			        		</div>
+			        		<div class="col-md-6">
+			        			<div class="row">
+			        				<strong>Observa el video y responde las siguientes preguntas:</strong>
+			        			</div><br>
+			        			<!-- Pregunta 1 -->
+			        			<div class="row"><strong>1.	El Bogotazo fue una revuelta popular que dejo la capital del país casi destruida, sin embargo:</div></strong><br>
+			        			<div class="row">
+			        				<div class="form-check">
+									  <input class="form-check-input" type="radio" name="act2p1" id="act2p1a" value="a">
+									  <label class="form-check-label" for="act2p1a">
+									  	a. También hubo protestas y disturbios en todo el país el mismo día.
+									  </label>
+									</div>
+			        			</div>
+			        			<div class="row">
+			        				<div class="form-check">
+									  <input class="form-check-input" type="radio" name="act2p1" id="act2p1b" value="b">
+									  <label class="form-check-label" for="act2p1b">
+									  	b. No fue un evento tan importante.
+									  </label>
+									</div>
+			        			</div>
+			        			<div class="row">
+			        				<div class="form-check">
+									  <input class="form-check-input" type="radio" name="act2p1" id="act2p1c" value="c">
+									  <label class="form-check-label" for="act2p1c">
+									  	c. Hubo algunos muertos en todo el país el mismo día.
+									  </label>
+									</div>
+			        			</div><br>
+			        			<!-- Pregunta 2 -->
+			        			<div class="row"><strong>2.	Según los textos y el video anterior, se puede afirmar que el asesinato de Jorge Eliecer Gaitán provocó:</div></strong><br>
+			        			<div class="row">
+			        				<div class="form-check">
+									  <input class="form-check-input" type="radio" name="act2p2" id="act2p2a" value="a">
+									  <label class="form-check-label" for="act2p2a">
+									  	a. Violencia desmedida por parte de las fuerzas militares.
+									  </label>
+									</div>
+			        			</div>
+			        			<div class="row">
+			        				<div class="form-check">
+									  <input class="form-check-input" type="radio" name="act2p2" id="act2p2b" value="b">
+									  <label class="form-check-label" for="act2p2b">
+									  	b. La muerte de muchos civiles en todo el país.
+									  </label>
+									</div>
+			        			</div>
+			        			<div class="row">
+			        				<div class="form-check">
+									  <input class="form-check-input" type="radio" name="act2p2" id="act2p2c" value="c">
+									  <label class="form-check-label" for="act2p2c">
+									  	c. El inicio de un periodo histórico conocido como LA VIOLENCIA.
+									  </label>
+									</div>
+			        			</div><br>
+			        			<!-- Pregunta 3 -->
+			        			<div class="row"><strong>3.	La principal razón por la cual Jorge Eliecer Gaitán fue asesinado fue porque:</div></strong><br>
+			        			<div class="row">
+			        				<div class="form-check">
+									  <input class="form-check-input" type="radio" name="act2p3" id="act2p3a" value="a">
+									  <label class="form-check-label" for="act2p2a">
+									  	a. Era un líder social que convocó a la clase obrera y campesina a movilizarse en contra del actual gobierno.
+									  </label>
+									</div>
+			        			</div>
+			        			<div class="row">
+			        				<div class="form-check">
+									  <input class="form-check-input" type="radio" name="act2p3" id="act2p3b" value="b">
+									  <label class="form-check-label" for="act2p2b">
+									  	b. Era un líder social que defendía los principios del partido conservador.
+									  </label>
+									</div>
+			        			</div>
+			        			<div class="row">
+			        				<div class="form-check">
+									  <input class="form-check-input" type="radio" name="act2p3" id="act2p3c" value="c">
+									  <label class="form-check-label" for="act2p3c">
+									  	c. Era un líder social que quería sabotear la 9 conferencia panamericana.
+									  </label>
+									</div>
+			        			</div>
+			        		</div>
+			        	</div>
+			        </div><hr>
+			        <div class="row">
+			        	<div class="col-md-10"></div>
+						<div class="col-md-2"><button id="act2cal" class="btn btn-success">CALIFICAR</button></div>
+				   </div>
+			      </div>
+			      
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+<!-- actividad3 -->
+			<div class="modal fade" id="actividad3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">1950 - Actividad</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body" style="text-align: justify;">
+			        <strong>Responde en tu cuaderno las siguientes preguntas y argumenta tu opinión. Puedes buscar referentes citando correctamente.</strong><br>
+			        	<hr>
+						<strong>a.</strong>	¿Qué opinas que el estado a cargo del presidente conservador Mariano Ospina Pérez haya liderado la creación de grupos ilegales para la persecución de sus opositores?
+						<hr>
+						<strong>b.</strong>	¿Consideras que el actuar de las fuerzas armadas (policía y ejército) debe siempre estar acorde a la filosofía del presidente a cargo como sucedió en este periodo? ¿Crees que las fuerzas armadas actúan de forma neutra en nuestra actualidad?
+						<hr>
+						<strong>c.</strong>	¿Qué opinas que los liberales y gaitanistas se hayan apoyado en grupos guerrilleros para defenderse de la persecución conservadora? ¿Existían otros mecanismos legales?
+						<hr>
+						<strong>d.</strong>	¿Quién fue Guadalupe Salcedo? Investiga sobre este personaje y compara su movimiento con la situación actual de Colombia ¿Existe alguien como el actualmente?
+
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+<!-- actividad4 -->
+			<div class="modal fade" id="actividad4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">1953 - Actividad</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body" style="text-align: justify;">
+			        <strong>Elabore un mapa mental donde resalte la obra política del General Gustavo Rojas Pinilla. Sea creativo, investigue y utilice los recursos que considere pertinentes para que la información sea clara y precisa.</strong><hr>
+			        Ejemplo: <br><br>
+			        <img src="img/mapa.jpg"><hr>
+			        Fuente del mapa ejemplo: <a href="https://www.slideshare.net/kathycarbajal52/mapa-mental-68461157">https://www.slideshare.net/kathycarbajal52/mapa-mental-68461157</a>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+<!-- actividad5 -->
+			<div class="modal fade" id="actividad5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">1957 - Actividad</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body" style="text-align: justify;">
+			        <hr>Para finalizar la temática, es momento de indagar como se vivió este periodo de tiempo. Con ayuda de tus familiares realiza al menos dos entrevistas, siguiendo el guion que se te adjunta. Investiga y reflexiona como las personas vivieron el periodo de LA VIOLENCIA, al finalizar la actividad realiza un párrafo de conclusión desde tu punto de vista.
+			        <hr>
+			        <img src="img/a5.png" style="width: 760px">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+</body>
+<script src="actividad1.js"></script>
+<script src="actividad2.js"></script>
+</html>
